@@ -68,5 +68,107 @@ public class Conditions
         {
             System.out.println("What a rebel! :o");
         }
+        
+        /*
+         * Ok, now we know how to choose between two choices, but what if we're
+         * dealing with a more complicated problem that needs the comuter to 
+         * choose one of three or more options?  Well, the condition inside of
+         * an if statement simply needs to evaluate to a boolean value, but it
+         * doesn't have to come from a VARIABLE.  Just like in math, booleans
+         * can have expressions.  Boolean expressions typically check if two
+         * values are equal or not equal, greater than or less than, etc.
+         * We can use expressions like this to create scenarios in which there
+         * are more than two possible outcomes, and we can use another type of
+         * if block, the ELSE IF.  The else/if statement must be located directly
+         * below an if statement, and it will only run if the original if 
+         * statement's condition comes up false AND the else/if statement is true.
+         *
+         * Below is an example where we use the equality, less-than, and greater-
+         * than operators (which we'll cover in greater detail in the next
+         * lesson) in an else/if statement.
+         */
+        
+        int johnnyAllowance = 5;
+        int billyAllowance = 6;
+        
+        if(johnnyAllowance > billyAllowance)
+        {
+            System.out.println("Johnny's allowance is greater than Billy's!");
+        }
+        else if(johnnyAllowance < billyAllowance)
+        {
+            System.out.println("Billy's allowance is greater than Johnny's!");
+        }
+        else
+        {
+            System.out.println("Johnny and Billy have the same allowance!");
+        }
+        
+        /*
+         * Notice that the else/if statement has its own conditional statement.
+         * This is because the else/if has it's own triggers that it needs to run
+         * but only in the case that the first if statement does not.  Think of
+         * it this way:
+         *
+         *      IF Johnny's allowance is greater than Billy's allowance
+         *          
+         *          //Do some action
+         *
+         *      OTHERWISE, IF Johnny's allowance is less than Billy's allowance
+         *
+         *          //Do another action
+         *
+         *      OTHERWISE,
+         *
+         *          //Do the last action
+         *
+         * If/Else if/Else statements can be stacked like this and have an
+         * INFINITE number of else/if statements.  The only requirement is that
+         * the first else/if statement must come AFTER an if statement, and the
+         * else statement must come AFTER all other statements.
+         *
+         * Let's imagine a situation in which you want the computer to do 
+         * something different under each of 5 different circumstances.  To
+         * symbolize this, we're simply going to use an integer that will be any
+         * value between 1 and 5.
+         */
+        
+        int circumstance = 2;
+        
+        if(circumstance == 1)
+        {
+            System.out.println("Circumstance 1!");
+        }
+        else if(circumstance == 2)
+        {
+            System.out.println("Circumstance 2!");
+        }
+        else if(circumstance == 3)
+        {
+            System.out.println("Circumstance 3!");
+        }
+        else if(circumstance == 4)
+        {
+            System.out.println("Circumstance 4!");
+        }
+        else if(circumstance == 5)
+        {
+            System.out.println("Circumstance 5!");
+        }
+        else
+        {
+            /*
+             * Now, if it happens to be that none of the previous cases have
+             * executed, that means that none of their conditions has been true.
+             * For this particular example, that means that the variable
+             * 'circumstance' was not equal to any number from 1 to 5.  In many
+             * cases, an ELSE statement is used to detect if there has been
+             * a problem in the code, such as when an improper option is chosen.
+             * It's useful to print an error so that it's easy to see that 
+             * something fell through.
+             */
+            
+            System.out.println("Circumstance was not 1-5! Something went wrong!");
+        }
     }
 }

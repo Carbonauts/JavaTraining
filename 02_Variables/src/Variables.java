@@ -12,19 +12,20 @@ public class Variables
      */
      
     /**
-     * Let's make our first variable.  When DECLARING a variable, you must give
-     * it a type, a name, and eventually, a value.  This variable will be named
-     * "words", have a type of "String" (a text value), and hold a value of
-     * "Hello, World!".
-     */
-    static String words = "Hello, World!";
-    
-    /**
      * The MAIN function is an example of a METHOD.  It has a name, a type (void),
      * and a block { } that it executes (its "action").
      */
     public static void main(String[] args)
     {
+        /**
+         * Let's make our first variable.  When DECLARING a variable, you must give
+         * it a type, a name, and eventually, a value.  This variable will be named
+         * "words", have a type of "String" (a text value), and hold a value of
+         * "Hello, World!".
+         */
+        String words = "Hello, World!";
+    
+        
         /*
          * Here, we're going to use the System.out.println() method again.  This
          * is a method that is provided by Java itself, but later I'll show you

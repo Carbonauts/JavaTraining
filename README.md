@@ -12,9 +12,9 @@ That being said, here's an index of the lessons and a short description of each.
 
     01_HelloWorld/
         
-                This is the classic "intro to programming" project used in 
-                tutorials of many different programming languages, and simply
-                prints out a text statement to the console window.
+                This is the classic introduction to programming for many
+                different programming languages that prints out a simple
+                text statement to the screen.
     
     02_Variables/
                 
@@ -27,5 +27,3 @@ That being said, here's an index of the lessons and a short description of each.
                 talks about the ternary operator.
                 
     04_Operations/
-                
-                Discusses mathematical and boolean operations.
