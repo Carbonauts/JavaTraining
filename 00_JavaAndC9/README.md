@@ -51,3 +51,31 @@ collaborate with teammates.
     working in the top half of the screen and whenever you run code you'll
     typically see it at the bottom of the screen.  Once you're comfortable, you
     can move tabs around and divide the screen how you like.
+    
+For the purpose of Team 1829, the Carbonauts, each workspace member will be
+given their own project folder.  This is in the form of "Name_Projects".  Inside
+of your folder, you have supreme control, and you're allowed to change any code
+you want and to make new projects.  Inside of your folder, you should have sub-
+folders for projects, each of which will have sub-folders for source (src) code.
+
+Let me explain visually:
+
+    Nick_Projects/
+        
+        Project1/
+            
+            bin/
+            
+            src/
+                
+                HelloWorld.java
+        
+        Project2/
+            
+            ...
+    
+    You only need to worry yourself about the src/ folder, everything that
+    belongs in bin/ is generated when you compile the program (when you hit
+    Run).  Every time you make a new project, you MUST make a src/ folder inside
+    of it, and all of your code files belong there.  The bin/ folder will be
+    created for you the first time you run a project.
