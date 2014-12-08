@@ -27,3 +27,13 @@ That being said, here's an index of the lessons and a short description of each.
                 talks about the ternary operator.
                 
     04_Operations/
+                
+                Operations are actions that are taken on data.  This section
+                demonstrates Numerical and Boolean operations that are natively
+                supported by Java.
+    
+    05_Loops/
+                
+                Often in computing, there are tasks that needs to be run
+                repetitively in order to achieve a certain goal.  Loops allow
+                programs to repeat an action for as long as needed.

@@ -170,5 +170,44 @@ public class Conditions
             
             System.out.println("Circumstance was not 1-5! Something went wrong!");
         }
+        
+        /*
+         * If statements are excellent control flow features that can be used
+         * for just about every condition need.  However, being structures, they
+         * are somewhat bulky.  Sometimes, all you need is to make a quick
+         * decision between two values, without having all the hassle of an
+         * entirely new structure.  Java has an operator that does exactly this,
+         * the "ternary" (?:) operator.  The ternary operator takes a boolean
+         * condition (just like an if statement), but then evaluates to one of
+         * two possible falues.  The setup looks like this:
+         *
+         *      Boolean Expression ? Value one : Value two;
+         *
+         * If the boolean expression evaluates to TRUE, then value one is
+         * returned, but if it's false then value two is returned.  The return 
+         * values for a ternary operator can be of any type, but they  must be 
+         * the same type.  Below are a few examples:
+         */
+        
+        boolean plural = true;
+        String say = "";        //Empty String
+        
+        //Here, the ternary operator is being used to set a variable "say".
+        say = plural ? "Cats are awesome!" : "My cat is awesome!";
+        
+        System.out.println(say);
+        
+        /*
+         * As I mentioned earlier, the ternary operator may be used for many
+         * data types, as long as the two sides are the SAME data type.
+         * Below is an example that uses integers rather than Strings.
+         */
+        
+        boolean wonLottery = true;
+        int jackpot = 1000000;
+        int loss = 0;
+        
+        //Here, the value of the ternary operator is passed straight to println.
+        System.out.println("You have won " + (wonLottery ? jackpot : loss) + " dollars!");
     }
 }
